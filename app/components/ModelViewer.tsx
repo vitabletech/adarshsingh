@@ -67,9 +67,8 @@ export default function ModelViewer({ modelUrl }: { modelUrl?: string }) {
     guideRef.current = photoModel.guides;
 
     if (modelUrl) {
-      const path = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${modelUrl}`;
       import("three/addons/loaders/GLTFLoader.js").then(({ GLTFLoader }) => {
-        new GLTFLoader().load(path, (gltf) => {
+        new GLTFLoader().load(modelUrl, (gltf) => {
           if (disposed) return;
           const scan = gltf.scene;
           const bounds = new THREE.Box3().setFromObject(scan);

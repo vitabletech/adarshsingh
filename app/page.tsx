@@ -26,8 +26,7 @@ const measurements = [
 ];
 
 function Photo({ src, alt, className = "", loading = "lazy" }: { src: string; alt: string; className?: string; loading?: "lazy" | "eager" }) {
-  const imageSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${src}`;
-  return <img className={className} src={imageSrc} alt={alt} loading={loading} decoding="async" />;
+  return <img className={className} src={src} alt={alt} loading={loading} decoding="async" />;
 }
 
 export default function Home() {

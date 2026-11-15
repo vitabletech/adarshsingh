@@ -11,9 +11,9 @@ npm run dev
 
 ## Publish on GitHub Pages
 
-The included GitHub Actions workflow builds the static site from the `main` branch and deploys the `out/` folder. In the repository’s Pages settings, select **GitHub Actions** as the deployment source.
+The included GitHub Actions workflow builds the static site from the `main` branch and deploys the `out/` folder. In the repository’s Pages settings, select **GitHub Actions** as the deployment source. The build serves assets from the domain root for the custom domain `adarshsingh.vitabletech.in`.
 
-To build locally with the same project-site paths used on GitHub Pages:
+To build locally with the same root paths used on GitHub Pages:
 
 ```sh
 GITHUB_PAGES=true npm run build
