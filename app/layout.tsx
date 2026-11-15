@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./styles.css";
 
-const siteUrl = "https://msrajawat298.github.io/modeling-portfolio";
+const siteUrl = "https://vitabletech.github.io/adarshsingh";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),

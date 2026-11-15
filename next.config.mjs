@@ -1,5 +1,5 @@
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repositoryName = "modeling-portfolio";
+const repositoryName = "adarshsingh";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
